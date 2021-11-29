@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BrowserRouter,Route } from 'react-router-dom';
 import classes from "./App.module.css"
@@ -13,14 +12,19 @@ import Settings from './Components/Settings/Settings';
 
 
 const App = (props) => {
+  debugger;
   return (
     <BrowserRouter>
       <div className={classes.app_wrapper}>
         <Header/>
-        <Navbar navbarData={props.state.sitebar}/>
+        <Navbar navbarData={props.state.sidebar}/>
         <div className={classes.content}>
-          <Route path="/dialogs" render={() => <Dialogs dialogsData = {props.state.DialogsPage}/>}/>
-          <Route path="/profile" render={() => <Profile updatePostText={props.updatePostText} addPost={props.addPost} posts={props.state.ProfilePage}/>}/>
+          <Route path="/dialogs" render={() => <Dialogs
+              dispatch={props.dispatch}
+              dialogsData = {props.state.DialogsPage}/>}/>
+          <Route path="/profile" render={() => <Profile
+              dispatch={props.dispatch}
+              posts={props.state.ProfilePage}/>}/>
           <Route path="/news" component={News}/>
           <Route path="/music" component={Music}/>
           <Route path="/settings" component={Settings}/>

@@ -1,0 +1,17 @@
+.app_wrapper{
+  margin: 0 auto;
+  width: 1200px;
+  display:grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas:
+  "header header "
+  "navbar main-content ";
+  gap: 7px;
+
+}
+.content{
+  grid-area: main-content;
+  background-color: rgb(240, 250, 255);
+  display: grid;
+}

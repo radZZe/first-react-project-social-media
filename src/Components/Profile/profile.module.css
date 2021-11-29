@@ -1,0 +1,10 @@
+.background img{
+  width: 90%;
+  height: 50%;
+}
+.background{
+  margin: 0 auto;
+}
+.item{
+  color: orange;
+}

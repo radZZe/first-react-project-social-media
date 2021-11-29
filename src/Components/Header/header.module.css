@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    align-items: center;
+    grid-area: header;
+    background-color: rgb(240, 250, 255);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid rgb(120, 207, 255);
+}
+.header img{
+  margin-left: 5px;
+  height: 50px;
+}

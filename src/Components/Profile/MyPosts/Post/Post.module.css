@@ -1,0 +1,36 @@
+.content img{
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.content{
+    display: flex;
+    align-items: center;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+.content p {
+    margin-left: 20px;
+}
+
+.like{
+    display: flex;
+    align-items: flex-end;
+    float: right;
+}
+.like img {
+    width: 20px;
+    height: 20px;
+}
+.like span{
+    margin-left: 5px;
+}
