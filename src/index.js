@@ -5,12 +5,10 @@ import './index.css';
 import App from './App';
 
 
-let renderEntireTree = (state) => {
+let renderEntireTree = () => {
     ReactDOM.render(
         <React.StrictMode>
-            <App state={state}
-                 dispatch={store.dispatch.bind(store)}
-                  />
+            <App dispatch={store.dispatch.bind(store)}  store={store}/>
         </React.StrictMode>,
         document.getElementById('root')
     );
@@ -19,5 +17,5 @@ let renderEntireTree = (state) => {
 renderEntireTree(store.getState());
 store.subscribe(() => {
     let state = store.getState();
-    renderEntireTree(state)
+    renderEntireTree()
 });
