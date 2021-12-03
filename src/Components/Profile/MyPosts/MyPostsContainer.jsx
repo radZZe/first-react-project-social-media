@@ -4,7 +4,7 @@ import {addPostActionCreator, updatePostTextActionCreator} from "../../../redux/
 import MyPosts from './MyPosts'
 
 const MyPostsContainer = (props) => {
-    debugger;
+    
     let state = props.store.getState();
 
     let onAddNewPost = () => {

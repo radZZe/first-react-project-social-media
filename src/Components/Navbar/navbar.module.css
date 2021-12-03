@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
 .navbar{
-    font-family: 'Montserrat';
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    grid-area: navbar;
-    font-size: 20px;
-    position: relative;
-    border-right: 2px solid rgb(120, 207, 255);
+  height:650px ;
+  font-family: 'Montserrat';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: navbar;
+  font-size: 20px;
+  position: relative;
+  border-right: 2px solid rgb(120, 207, 255);
   }
 .navbar_content{
   height: 650px;

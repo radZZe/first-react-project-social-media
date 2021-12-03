@@ -11,6 +11,8 @@
 
 }
 .content{
+  height: 650px;
+  overflow-y: scroll;
   grid-area: main-content;
   background-color: rgb(240, 250, 255);
   display: grid;
