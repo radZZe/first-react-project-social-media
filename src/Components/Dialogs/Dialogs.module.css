@@ -1,6 +1,9 @@
 .dialogs{
-    display: grid;
-    grid-template-columns: 2fr 4fr;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: 20% 80%; */
 }
 .dialogs_item{
 
@@ -26,6 +29,7 @@
  color: black;
 }
 .message{
+    margin-bottom: 10px;
     padding: 5px;
     border: 2px solid grey;
     border-radius: 15px;
@@ -35,14 +39,23 @@
     -o-border-radius: 15px;
 }
 .messages{
+    width: 650px;
     position: relative;
 }
 .new_message{
-    width: 100%;
-    position: absolute;
+    border-radius: 8px;
+    border: 1px solid rgb(120, 207, 255);
+    padding: 10px;
+    background-color: rgb(240, 250, 255);
+    width: 650px;
+    position: fixed;
     bottom: 0;
     display: flex;
     align-items: center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 .new_message button{
     border-radius: 10px;
@@ -53,8 +66,10 @@
     -o-border-radius: 10px;
 }
 .new_message textarea{
+    resize:none;
     border-radius: 15px;
-    width: 100%;
+    width: inherit;
+    max-width: inherit;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
